@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primarikey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btnSigUp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="5dp"
+        android:text="Đăng ký"
+        android:textColor="#9790f8"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:text="Welcome To Rogo !"
+        android:textColor="@color/text"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imgBanner"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="125dp"
+        android:background="@color/banner"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:textSize="12.5dp"
+        android:text="Đăng nhập với" />
+
+    <ImageView
+        android:id="@+id/imgSigInGoogle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="207dp"
+        android:background="@drawable/boder"
+        android:src="@drawable/ic_logo_google" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/txtTaiKhoanEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:text="Tài Khoản Email" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTaiKhoanEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="EMAIL"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtLogInEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmail"
+        android:layout_marginLeft="20dp"
+        android:drawableEnd="@drawable/ic_action_pass"
+        android:ems="15"
+        android:hint="abc@gmail.com"
+        android:inputType="textPersonName"
+
+        />
+
+    <TextView
+        android:id="@+id/txtMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLogInEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="MẬT KHẨU"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtLogInPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMatKhau"
+        android:layout_marginLeft="20dp"
+        android:drawableEnd="@drawable/ic_action_mail"
+        android:ems="15"
+
+        android:hint="******"
+        android:inputType="textPassword"
+
+        />
+
+    <Button
+        android:id="@+id/btnQuenMatKhau"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLogInPassword"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Quên Mật khẩu"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+
+    <ImageButton
+
+
+        android:id="@+id/imgbtnLogin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/edtLogInPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@mipmap/ic_launcher_next"
+        android:backgroundTintMode="screen" />
+
+    <TextView
+        android:id="@+id/txtHoac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLogInPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Hoặc" />
+    <Button
+        android:id="@+id/btnXacThucOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHoac"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/xacthucOTP"
+        android:text="XÁC THỰC OTP"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/textxacthucotp" />
+
+</RelativeLayout>

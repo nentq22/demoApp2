@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/logohome" />
+
+        <Button
+
+            android:id="@+id/btnAdd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginRight="60dp"
+            android:background="@drawable/ic_action_add" />
+
+        <Toolbar
+
+
+            android:id="@+id/tbNav"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_action_menu222" />
+
+        <TextView
+            android:id="@+id/txtphongKhach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgLogo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Phòng khách"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/thongso"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/txtphongKhach"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/boderhome1">
+
+            <ImageView
+                android:id="@+id/imgNhietDo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_action_nhietdo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtnhietdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="20.5"
+                    android:textColor="#5f5f5f"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Nhiệt Độ"
+                    android:textColor="#b9bbc3" />
+
+            </LinearLayout>
+
+
+            <ImageView
+
+                android:id="@+id/imgDoAm"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_action_doam" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtdoam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="60%"
+                    android:textColor="#5f5f5f"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Độ ẩm"
+                    android:textColor="#b9bbc3" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/chieusang"
+            android:layout_width="197dp"
+            android:layout_height="198dp"
+            android:layout_below="@+id/thongso"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/chieusang1" />
+
+        <Switch
+            android:id="@+id/swThietBi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thongso"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="170dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="155dp"
+            android:layout_below="@+id/thongso"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/playbox" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="155dp"
+            android:layout_below="@+id/thongso"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="86dp"
+            android:src="@drawable/congtac" />
+
+        <TextView
+            android:id="@+id/txtcambien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chieusang"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Cảm biến"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/LNcbcd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txtcambien"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+
+            android:layout_marginRight="10dp"
+            android:background="@drawable/boderhome1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_action_cbcd" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtcbcd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Cảm biến chuyển động"
+                    android:textColor="#5f5f5f"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="5 Phút trước"
+                    android:textColor="#b9bbc3" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/LNcbcd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="10dp"
+            android:background="@drawable/boderhome1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_action_cbcd" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCongtac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Công tắc cảnh 6 nút"
+                    android:textColor="#5f5f5f"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="5 Phút trước"
+                    android:textColor="#b9bbc3" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
